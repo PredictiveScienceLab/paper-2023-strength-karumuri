@@ -8,3 +8,14 @@ strength prediction of high entropy alloys from hardness measurements."
 Our paper proposes a regression methodology that can deal with input uncertainty when one wishes to correlate an inexpensive experimental measurement (e.g., hardness) to an expensive one (e.g., yield strength). Our hierarchical Bayesian approach uses two Gaussian processes. The first one maps noiseless physical descriptors to the inexpensive experimental measurement. The second Gaussian process maps noiseless physical descriptors and the inexpensive experimental measurement to the expensive experimental measurement. The two Gaussian processes form a nested model that is not analytically tractable. To overcome this issue, we propose semi-analytical approximations to both the marginal likelihood and the posterior predictive distribution. 
 
 [Toyprob1](https://github.com/PredictiveScienceLab/paper-2023-strength-karumuri/tree/main/Toyprob1) and [HEAprob](https://github.com/PredictiveScienceLab/paper-2023-strength-karumuri/tree/main/HEAprob) contains the Python scripts that implement the examples discussed in the paper.
+
+## Installing
+
+The code for examples is written using GPy package. Install dependencies at [requirements.txt](https://github.com/PredictiveScienceLab/paper-2023-strength-karumuri/blob/main/requirements.txt) and clone our repository
+```
+git clone https://github.com/PredictiveScienceLab/paper-2023-strength-karumuri.git
+cd paper-2023-strength-karumuri
+```
+
+### Citation:
+If you use this code for your research, please cite our paper https://www.sciencedirect.com/science/article/pii/S0927025622005626.
